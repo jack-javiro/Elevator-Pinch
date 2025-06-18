@@ -2,7 +2,7 @@
 
 public class Elevator
 {
-    public int CurrentFloor { get; private set; } = 0; // ground floor is 0
+    public int CurrentFloor { get; set; } = 0; // ground floor is 0
     public Direction CurrentDirection { get; private set; } = Direction.Idle;
     private readonly int _maxFloor = 10; //level 10
     private readonly int _minFloor = 0;//ground floor
@@ -23,7 +23,6 @@ public class Elevator
         if (!_passengers.Any(p => p.DestinationFloor == destinationFloor))
         {
             Console.WriteLine($"Passenger has pressed the button for level {destinationFloor}");
-            Console.WriteLine($"Elevator doors closing.");
             _passengers.Add(new Passenger(destinationFloor));
         }
     }
@@ -96,6 +95,7 @@ public class Elevator
         {
             Console.WriteLine($"Doors open at floor {CurrentFloor} for passengers to enter or exit");
             await Task.Delay(1000); // Simulate door open time
+            Console.WriteLine($"Elevator doors closing.");
         }
 
         // Change direction if no more requests in current direction
