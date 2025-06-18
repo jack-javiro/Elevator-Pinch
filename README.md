@@ -8,6 +8,8 @@ Hit a key to continues to the next test.
 
 A few very basic unit tests are there to run as well.
 
+-------------------------------------------------
+
 Disclaimer:
 
 This is a fairly complicated task to complete in 4 hours. (I spent 3-4 hours on this)
@@ -19,3 +21,5 @@ The program.cs contains too much logic.
 The Step() methods is to big and yet too simple, needs refactoring to be more robust and split in to separate methods.
 
 Even thought there are a few unit test, they are too simple and do not have great coverage.
+
+Also, having Task.Delay through the code is something I would never normally do.
