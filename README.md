@@ -23,3 +23,9 @@ The Step() methods is to big and yet too simple, needs refactoring to be more ro
 Even thought there are a few unit test, they are too simple and do not have great coverage.
 
 Also, having Task.Delay through the code is something I would never normally do.
+
+Again, focus was to get through the scenarios more that high quality.
+
+Normally for something as important as how an elevator runs, it would be the opposite.
+
+Quality and robustness of the code would be everything.
